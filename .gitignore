@@ -1,4 +1,17 @@
+# =========================
+# Maven / Java
+# =========================
 target/
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+*.zip
+*.tar.gz
+*.rar
+
+# Maven wrapper / build metadata
 pom.xml.tag
 pom.xml.releaseBackup
 pom.xml.versionsBackup
@@ -6,12 +19,137 @@ pom.xml.next
 release.properties
 dependency-reduced-pom.xml
 buildNumber.properties
+
+# Maven timing / cache
 .mvn/timing.properties
-# https://maven.apache.org/tools/wrapper/#Usage_with_or_without_Binary_JAR
+
+# Keep Maven wrapper JAR if your team uses wrapper
+# Remove this ignore if you want to commit it
 .mvn/wrapper/maven-wrapper.jar
 
-# Eclipse m2e generated files
-# Eclipse Core
+# Logs
+logs/
+*.log
+
+# JVM crash logs
+hs_err_pid*
+replay_pid*
+
+# =========================
+# IntelliJ IDEA
+# =========================
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# IntelliJ caches
+.idea_modules/
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/dictionaries
+.idea/**/shelf
+
+# IntelliJ generated files
+.idea/**/contentModel.xml
+.idea/**/compiler.xml
+.idea/**/libraries
+.idea/**/dataSources/
+.idea/**/dataSources.ids
+.idea/**/dataSources.local.xml
+.idea/**/sqlDataSources.xml
+.idea/**/dynamic.xml
+.idea/**/uiDesigner.xml
+.idea/**/gradle.xml
+
+# SonarLint
+.idea/**/sonarlint/
+
+# Markdown plugin
+.idea/**/markdown.xml
+
+# AWS Toolkit
+.idea/**/aws.xml
+
+# =========================
+# Eclipse
+# =========================
 .project
-# JDT-specific (Eclipse Java Development Tools)
 .classpath
+.settings/
+.factorypath
+
+# Eclipse m2e
+.springBeans
+.sts4-cache/
+
+# =========================
+# VS Code
+# =========================
+.vscode/
+
+# =========================
+# Playwright
+# =========================
+
+# Playwright test results
+playwright-report/
+test-results/
+blob-report/
+
+# Playwright traces/screenshots/videos
+test-output/
+screenshots/
+videos/
+traces/
+
+# Playwright auth/session files
+playwright/.auth/
+storageState.json
+
+# Playwright cache
+.cache/ms-playwright/
+
+# Node modules (if Playwright uses Node.js)
+node_modules/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# npm / yarn / pnpm logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Package manager caches
+.pnpm-store/
+.npm/
+.yarn/
+
+# =========================
+# OS Generated Files
+# =========================
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# =========================
+# Coverage / Reports
+# =========================
+coverage/
+jacoco.exec
+site/
+
+# =========================
+# Temporary files
+# =========================
+tmp/
+temp/
+*.tmp
+*.swp
+*~
