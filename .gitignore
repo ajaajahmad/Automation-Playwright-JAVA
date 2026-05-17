@@ -26,6 +26,7 @@ buildNumber.properties
 # Keep Maven wrapper JAR if your team uses wrapper
 # Remove this ignore if you want to commit it
 .mvn/wrapper/maven-wrapper.jar
+.mvn
 
 # Logs
 logs/
